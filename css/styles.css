@@ -1,0 +1,355 @@
+/* Travail Pratique 2 par Camilia El Moustarih - Feuille de styles */
+
+/* Remise à zéro */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Pour un défilement plus lisse dans la page lors des changements de sections */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Styles généraux de la page */
+body{
+    overflow-x: hidden;
+    font-family: 'Caveat', cursive;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1366px;
+    min-height: 768px;
+    background-image: url("../images/TextureBGCafe.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-color: #f7f3e3;    
+}
+
+
+/* Styles pour le header qui inclut le nav */
+#headerFixe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #280000;
+    color: #f7f3e3;
+    height: 100px;
+    width: 100vw;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 26px;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #70587C;
+}
+
+
+/* Pour que le texte reste de la couleur choisie une fois qu'il a été cliqué */
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Padding haut pour les div invisibles en haut de chaque section afin que le nav ne cache pas les sections lorsque les liens sont cliqués */
+#sectionHoraire, #sectionPhotos, #sectionVideos{
+    padding-top: 150px;
+}
+
+/* Styles de la section Accueil */
+#imageHeader{
+    padding-top: 50px;
+    display: flex;
+    margin: auto;
+}
+
+#hautPageAccueil{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(18px, 22px, 26px);
+    background-color: #70587C;
+    border-top: 4px double #280000;        
+    border-bottom: 4px double #280000;    
+    color: #f7f3e3;
+}
+
+#hautPageAccueil p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* Pour la transition et le changement de couleur au survol */
+#hautPageAccueil:hover{
+    background-color: #f7f3e3;
+    color: #70587C;
+    transition: ease-in-out 1s;
+}
+
+
+/* Styles pour la section article qui contient 2 articles et 2 figures avec leurs figcaption */
+.articleIntro{
+    display: flex;
+    background-color: rgba(247, 243, 227, 0.7);
+    width: 1200px;
+    margin: 150px auto 150px auto;
+}
+
+.articleIntro p{
+    font-size: 20px;
+}
+
+.articleIntro figure{
+    padding-left: 150px;
+    padding-right: 150px;
+    opacity: 0.5;
+}
+
+
+/* Pour la transition sur l'opacité des images */
+.articleIntro figure:hover{
+    cursor: pointer;
+    transition: ease-in 0.5s;
+    opacity: 1;
+}
+
+.articleIntro figcaption{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#articleGauche, #articleDroite{
+    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#articleGauche{
+    border-right: 2px dotted black;
+}
+
+
+/* Styles pour le tableau */
+table{
+    background-color: #f7f3e3;
+    border: dotted #280000 2px;
+}
+
+#tableauHoraire{
+    width: 1200px;    
+    background-color: rgba(247, 243, 227, 0.7);
+    border: solid #70587C 2px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+#tableauHoraire >p, #tableauHoraire >h3{
+    font-size: 20px;
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+#barcelone, #coruna, tfoot{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Styles de la galerie de photos. L'effet visuel désiré ici est de créer un style film Polaroid */
+#galeriePhotos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+    width: 1400px;
+    margin: auto;
+}
+
+.titresPhotos > h1, .titresPhotos > h3{
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    background-color: rgb(247, 243, 227, 0.7);
+}
+
+#galeriePhotos li{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    border: 1px solid #000000;
+    padding: 10px 10px 10px;
+    padding-bottom: 80px;
+    list-style: none;
+    max-width: 900px;
+    background-color: #ffffff;
+}
+
+#galeriePhotos li img:hover{
+    cursor: pointer;    
+    transform: scale(1.4);
+}
+
+#galeriePhotos figcaption{
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* Styles de la galerie vidéo */
+#videosTitre > h1{
+    width: 100px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    background-color: rgb(247, 243, 227, 0.7);
+}
+
+#galerieVideos{
+    width: 1400px;
+    margin: auto;
+    display: flex;     
+    flex-wrap: wrap;   
+    justify-content: center;
+    background-color: rgba(247, 243, 227, 0.7);
+}
+
+#galerieVideos iframe{
+    border: 1px solid black;
+}
+
+#galerieVideos figcaption{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Styles de la zone des formulaires */
+fieldset{
+    border: none;
+}
+
+#formulaires{
+    display: flex;
+    justify-content: center;
+    background-color: #70587C;
+    margin-top: 150px;
+}
+
+#formulaires > div{
+    width: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#formulaires h1, #formulaires h2, #formulaires legend, #formulaires label{
+    color: #f7f3e3;
+}
+
+#formulaireCommentaires ::placeholder, #formulaireCommentaires form input, #boutons, textarea, #choixPays option, select#choixPays, #boutonsResetPays input{
+    font-family: 'Caveat', cursive;
+}
+
+#formulaireCommentaires fieldset input{
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#formulaireCommentaires fieldset legend, label, #explication > legend{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#boutons{
+    display: flex;
+}
+
+#questionnaireUser h2{
+    padding-top: 15px;
+}
+
+#imageFormulaire{
+    float: right;
+    margin-top: 80px;
+}
+
+
+/* Styles pour les différentes zones du bas de page */
+footer{
+    display: flex;
+    background-color: #280000;
+    color: #f7f3e3;
+    height: 200px;
+}
+
+footer > div{    
+    width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+#descriptionTim > p{
+    text-align: left;
+    font-size: 18px;
+}
+
+footer div h2, h3{
+    font-weight: lighter;
+}
+
+#coordonnees, #iconesSociaux, #liensImportants{
+    border-right: solid 2px #f7f3e3;
+}
+
+#iconesSociaux img:hover{
+    cursor: pointer;
+}
+
+#liensImportants a{
+    color: inherit;
+    padding-top: 15px;
+}
+
+
+/* Styles pour la zone entièrement à la fin de la page, sous les blocs de Footer */
+#basPage{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#basPage div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+

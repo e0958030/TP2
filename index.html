@@ -1,0 +1,394 @@
+<!-- Travail Pratique 2 par Camilia El Moustarih - Document HTML -->
+
+<!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Camilia El Moustarih - Travail Pratique 2</title>
+        <meta name="author" content="Camilia El Moustarih">
+        <meta name="description" content="Mon voyage en Espagne">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Haut de page avec le menu Nav pour naviguer à travers la page -->
+        <header id="headerFixe">
+            <div id="navGauche">
+                <nav>
+                    <ul> 
+                        <li><a href="#imageHeader">Accueil</a></li>
+                        <li><a href="#sectionArticle">Articles</a></li>
+                        <li><a href="#sectionHoraire">Tableau</a></li>                       
+                    </ul>
+                </nav>
+            </div>
+            <div id="imageCentreNav">
+                <img id="cafe" src="images/grainsCafe.png" alt="Grain de café" title="Grain de café">
+            </div>
+            <div id="navDroite">
+                <nav>
+                    <ul>                        
+                        <li><a href="#sectionPhotos">Photos</a></li>
+                        <li><a href="#sectionVideos">Vidéos</a></li> 
+                        <li><a href="#formulaires">Formulaires</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img id="imageHeader" src="images/headerImg.jpg" alt="LaCorognePlage">
+
+        <!-- Section Accueil -->
+        <section id="hautPageAccueil">            
+            <p>Camilia El Moustarih - Travail Pratique 2</p>
+            <p>Mon premier blog - Mon voyage en Espagne</p>
+            <p>582-1W1 – Mise en page Web - Techniques d'intégration multimédia</p>
+            <p>Automne 2022 - Collège de Maisonneuve</p>
+        </section>
+  
+        <!-- Des divs avec des id seront insérés à chaque début de section afin de faciliter la navigation dans la page et ne pas cacher les titres avec la barre de navigation -->
+        <!-- Articles -->
+        <div id="sectionArticle"></div>
+        <div class="articleIntro">
+            <section id="articleGauche">
+                <article lang="es">
+                    <h1>Bonjour! ¡Hola!</h1>
+                    <h2>Bienvenue sur mon site!</h2>
+                    <p>À travers cette page, j'aimerais vous transporter en Espagne, précisément dans le nord du pays, où j'ai passé 3 magnifiques années. J'y ai découvert une nouvelle gastronomie, je me suis fait de très belles amitiés et j'ai perfectionné mon espagnol.</p>
+                        <figure>
+                            <img src="images/plageCoruna.jpg" alt="plageCoruna" title="La belle plage bleue de La Corogne" width="180" height="180">
+                            <figcaption>La belle plage bleue de la côte Pacifique</figcaption>
+                        </figure>
+                    <p>Lors de mon séjour, j'ai vu plusieurs beaux paysages, des belles plages et surtout, mangé des mets délicieux.</p>
+                    </article>
+            </section>
+                    
+            <section id="articleDroite">
+                <article>
+                    <h1>Un projet de fin de session</h1>
+                    <h2>Cours de Mise en Page Web 582-1W1-MA</h2>
+                    <p>Je vous présente alors mon projet final pour ce cours. Mon idée était de créer un blog de mon séjour, chose que je voulais faire depuis longtemps. Vous trouverez à la fin de cette page une section commentaires que vous pourrez remplir afin de m'aider à améliorer ce site et continuer à créer des pages web dans le futur!</p>
+                        <figure>
+                            <img src="images/coucherSoleilCoruna.jpg" alt="coucherSoleilCoruna" title="Un magnifique coucher de soleil sur La Corogne">
+                            <figcaption>Un magnifique coucher de soleil sur La Corogne</figcaption>
+                        </figure>
+                    <p>Toutes les photos affichées sur ce site ont été prises par moi! Bonne visite!</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Tableau qui représente l'horaire du voyage -->
+        <div id="sectionHoraire"></div>
+        <div id="tableauHoraire">
+            <h1>Mon horaire de voyage</h1>
+            <h3>Voici un aperçu de mon horaire de voyage.</h3>
+            <p>Lors de ma première visite, j'ai passé 1 mois. Comme le temps passait très vite, il a fallu que je planifie mes activités et sorties.</p>
+            <p>Le voyage est divisé en 2: 2 semaines à Barcelone et 2 semaines à La Corogne</p>
+            <table>
+                <caption>
+                    <details>
+                        <summary>Planification de mon voyage - 26 décembre 2016 au 28 janvier 2017</summary>
+                        Villes à visiter : Barcelone et La Corogne
+                    </details>
+                </caption>
+                
+                <thead>
+                    <tr>
+                       <th class="jour">Semaines et jours</th>
+                       <th scope="col">Lundi</th>
+                       <th scope="col">Mardi</th>
+                       <th scope="col">Mercredi</th>
+                       <th scope="col">Jeudi</th>
+                       <th scope="col">Vendredi</th>
+                       <th scope="col">Samedi</th>
+                       <th scope="col">Dimanche</th>
+                    </tr>
+                </thead>
+                        
+                <tbody>
+                    <tr id="barcelone">
+                        <td colspan="8">Barcelone</td>
+                    </tr>
+
+                   <tr lang="es">
+                      <th>Semaine 1: du 26 décembre au 1er janvier</th>
+                      <td>Arrivée à l'Aéroport de Barcelone/Arrivée à l'hôtel. Visite du Musée National d'Art de Catalogne en après-midi</td>
+                      <td>Visite du Parc de Montjuic en matinée. Visite de la Casa Batlló de Gaudí après le dîner.</td>
+                      <td>Visite de la Cathédrale Sagrada Familia et promenade dans les rues de Barcelone en soirée</td>
+                      <td>Visite de Montserrat et son village dans les montagnes</td>
+                      <td>Promenade dans le Parc du Labyrinthe d'Horta et après-midi cinéma</td>
+                      <td>Marche au long de la plage Barceloneta et spectacle de fin d'année en soirée à la Plaza España</td>
+                      <td>Visite du Marché de La Rambla, magasinage et repos.</td>
+                   </tr>
+                                    
+                   <tr lang="es">
+                      <th>Semaine 2: du 2 janvier au 7 janvier</th>
+                      <td>Visite du Parc de l'Espagne Industrielle le matin et visite des Jardins de La Tamarita l'après-midi</td>
+                      <td>Tournée du Musée des Sciences Naturelles de Barcelone suivi d'un spectacle de guitare</td>
+                      <td>Visite du Parc Guell de Gaudí et repos</td>
+                      <td>Visite du Museu de la Xocolata (Musée du Chocolat) et magasinage en après-midi. Repos</td>
+                      <td>Tour du Musée du parfum (Museo del Perfume) et marche dans les rues de la ville.</td>
+                      <td>Aventure gastronomique, tournée des restaurants, bars et cafés. Churros, tapas et chocolat chaud</td>
+                      <td>Musée Catalan de l'Archéologie et repos</td>
+                    </tr>
+        
+                    <tr id="coruna">
+                        <td colspan="8">La Corogne</td>
+                    </tr>
+
+                   <tr>
+                      <th>Semaine 3: du 8 janvier au 14 janvier</th>
+                      <td>Arrivée à l'Aéroport de La Corogne/Arrivée à l'appartement. Petit tour des restaurants et bars du quartier. Repos</td>
+                      <td>Visite de la Tour d'Hercules et défilé des 3 Rois Mages en soirée</td>
+                      <td>Visite de la Vieille Ville de La Corogne</td>
+                      <td>Visite de la ville de Lugo</td>
+                      <td>Montée du Mont de San Pedro, pique-nique</td>
+                      <td>Visite de l'Aquarium de Finisterrae de La Corogne</td>
+                      <td>Visite de la ville sacrée de Santiago de Compostelle en train</td>
+                   </tr>
+        
+                   <tr lang="es">
+                      <th>Semaine 4: du 22 janvier au 28 janvier</th>
+                      <td>Promenade le long de la ville sur le bord de la Plage (Paseo Maritimo) et magasinage au centre-ville</td>
+                      <td>Promenade autour de la Marina et après-midi cinéma</td>
+                      <td>Visite du château de San Antón</td>
+                      <td>Visite du Musée des Sciences Domus, de la Casa de las Ciencias (Maison des sciences) et visite de divers restaurants</td>
+                      <td>Retour à Santiago de Compostelle, visite de la cathédrale et des cafés</td>
+                      <td>Musée des Beaux Arts et concert au Palais de l'Opéra</td>
+                      <td>Visite du Musée Militaire Régional et repos</td>		     
+                   </tr>
+                                  
+                <tfoot class="tableFoot">
+                    <tr>
+                      <td colspan="8">Budget prévu pour le voyage = 800 Euros</td>
+                    </tr>
+                </tfoot>	
+        </table>
+        </div>
+
+        <!-- Galerie d'images dans des listes avec leurs descriptions en tant que courtes histoires -->
+        <!-- Toutes les photos dans cette section ont été prises par moi -->
+        <div id="sectionPhotos"></div>
+        <div class="titresPhotos">
+            <h1>Galerie de photos</h1>
+            <h3>Lors de mon voyage, j'ai eu l'occasion de pratiquer la photographie et apprendre toutes sortes de nouvelles techniques. Voici une petite collection de photos que j'ai prises lors de mon séjour là-bas. <u>Survolez les images avec la souris pour les agrandir.</u></h3>
+        </div>
+        <ul id="galeriePhotos" lang="es">                
+            <li>
+                <figure>
+                <img src="images/CoffeeAfternoon.png" alt="photoCafe1" height="360" width="360">
+                <figcaption>Rien de mieux qu'un bon cappuccino et un décadent café «bombón» en une journée pluvieuse d'automne. Je n'aimais pas le café avant ce voyage, mais depuis, je ne peux m'en passer!</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                <img src="images/santiago.jpg" alt="santiagoDeCompostella" height="360" width="360">
+                <figcaption>L'amie que je me suis fait en Espagne et moi sommes allées à Santiago de Compostelle, ville de pèlerinage. Elle m'a fait découvrir cette belle ville. Nous y sommes retournées plusieurs fois! </figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                <img src="images/cafeBonbon.jpg" alt="cafeBombon" height="360" width="360">
+                <figcaption>Le café «bombón» est une spécialité typique de la communauté autonome de Valence qui consiste à mélanger du café espresso avec du lait concentré sucré.</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/tourHercules.jpg" alt="La Tour de Hercules" height="360" width="360">
+                    <figcaption>La Tour d'Hercules, le plus ancien phare au monde. C'est là qu'Hercules a vaincu le géant Geryon. Ce monument est listé parmi les patrimoines du monde de l'UNESCO! </figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/fleursCerisier.jpg" alt="fleursDeCerisier" height="360" width="360">
+                    <figcaption>Lors de mon passage à León, la beauté des fleurs de cerisier m'a marquée. Le parc avait un passage central entouré de cerisiers. L'odeur était douce et agréable. Mais il faisait froid là-bas!!!</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/Leon.jpg" alt="cathedraleDeLeon" height="360" width="360">
+                    <figcaption>La très belle Cathédrale de León, située dans Castille-et-León, est un chef d'oeuvre de l'architecture gothique espagnole et a été construite entre 1205 et 1301.</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/biblioCafe.jpg" alt="bibliothequeDansUnCafe" height="360" width="360">
+                    <figcaption>Toujours à León, je suis tombée sur un café/bar dans lequel les murs étaient remplis de livres! On ne pouvait pas les toucher, mais le style était intéressant! À retenir si j'ouvre un café un jour!</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/latteBetteraves.jpg" alt="Latte aux betteraves" height="360" width="360">
+                    <figcaption>En hiver, le café proche de chez moi avait sorti le café latte à la betterave, je n'ai pas pu m'empêcher de l'essayer. Première et dernière fois. Le mélange était douteux.</figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="images/photographe.jpg" alt="photographe" height="360" width="360">
+                    <figcaption>Lors de mon voyage, une des compétences que j'ai perfectionné était la photographie. Mon amie avait étudié dans ce domaine et m'a donné plusieurs trucs très intéressants que j'utiliserai toute ma vie.</figcaption>
+                </figure>
+            </li>
+        </ul>
+
+        <!-- Section de la galerie vidéos --> 
+        <div id="sectionVideos"></div>
+        <div id="videosTitre">
+            <h1>Vidéos</h1>   
+            <div id="galerieVideos">            
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l4SYzPdyab4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>La plage de la Corogne</figcaption>
+                </figure>
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/epMDcqKoQys" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Différents types de cafés, boisson que j'ai appris à apprécier lors de mon séjour</figcaption>
+                </figure>    
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dBsfUtjTbi0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Une petite musique relaxante pour avoir une petite ambiance de café jazz</figcaption>
+                </figure>
+
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bV0D7INF7ZU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Le magnifique monastère de Montserrat à Barcelone, avec une vue splendide</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Partie inférieure du site -->
+        <!-- Section des formulaires -->
+        <section id="formulaires">
+            <!-- Commentaires -->
+            <div id="formulaireCommentaires">
+                <h1>Faites-moi parvenir vos commentaires!</h1>
+                <form>
+                    <fieldset>
+                        <fieldset id="identification">
+                                <label>Votre nom:<input type="text" placeholder="Votre nom"></label>
+                                <label>Votre prénom:<input type="text" placeholder="Votre prénom"></label>
+                                <label>Votre courriel:<input type="email" required placeholder="Votre courriel"></label>
+                        </fieldset>
+                        
+                            <fieldset id="commentaires">
+                                <legend>Vos commentaires</legend>
+                                <textarea cols="30" rows="5" placeholder="Écrire vos commentaires ici."></textarea>
+                            </fieldset>
+
+                            <fieldset id="boutons">
+                                <input type="reset" value="Réinitialiser">
+                                <input type="submit" value="Envoyer">
+                            </fieldset>
+                    </fieldset>
+                </form>
+                <h2>Merci beaucoup!</h2>
+            </div>
+
+            <!-- Sondage -->
+            <div id="questionnaireUser">
+                <h1>Petit sondage</h1>
+                <h2>Avez-vous déjà visité l'Espagne?</h2>
+                <form>
+                    <input type="radio" name="option" value="Oui">
+                        <label>Oui</label>
+                    <input type="radio" name="option" value="Non">
+                        <label>Non</label>
+                    
+                    <h2>Parmi les choix dans la liste suivante, quel pays aimeriez-vous visiter dans le futur?</h2>
+                    <fieldset id="choixDePays">
+                        <select id="choixPays">
+                            <option value="depart">Choisissez un pays</option>
+                            <option value="France">France</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Autriche">Autriche</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Japon">Japon</option>
+                            <option value="Angleterre">Angleterre</option>
+                            <option value="Allemagne">Allemagne</option>
+                        </select>
+
+                        <fieldset id="explication">
+                            <legend>Décrivez ce qui vous attire dans le pays que vous avez choisi.</legend>
+                            <textarea cols="30" rows="5" placeholder="Écrire votre explication ici."></textarea>
+                        </fieldset>
+
+                        <fieldset id="boutonsResetPays">
+                            <input type="reset" value="Réinitialiser">
+                            <input type="submit" value="Envoyer">
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="imageFormulaire">
+                <h2>Merci d'avoir pris le temps de visiter mon site!</h2>
+                <!-- La photo a été prise par moi -->
+                <img src="images/bourgeon.JPG" alt="" width="432" height="242">
+            </div>
+        </section>
+
+        <!-- Section Bas de Page -->
+        <footer>
+            <div id="coordonnees">
+                <h2>Adresse du studio</h2>
+                <h3>Passez me voir!</h3>
+                <p><img src="images/house-chimney-solid.png" alt="iconeMaison"> 3800, rue Sherbrooke Est</p>
+                <p>Montréal  (Québec)</p>
+                <p>H1X 2A2</p>
+                <p><img src="images/phone-solid.png" alt="iconeTelephone"> Téléphone: 514 254-7131</p>
+            </div>
+            
+                
+            <div id="iconesSociaux">       
+                <h2>Suivez-moi!</h2>             
+                <h3>Réseaux sociaux</h3>
+                <img src="images/facebook-messenger.png" alt="iconeMessenger" title="Lien vers une nouvelle conversation Messenger">
+                <img src="images/twitter.png" alt="iconeTwitter" title="Page Twitter">
+                <img src="images/pinterest.png" alt="iconePinterest" title="Page Pinterest">
+                <img src="images/square-instagram.png" alt="iconeInstagram" title="Profil Instagram">
+                <img src="images/youtube.png" alt="iconeYouTube" title="Page YouTube">
+                <img src="images/github.png" alt="iconeGithub" title="Page GitHub">
+            </div>
+            
+            <div id="liensImportants">
+                <h2>Liens importants</h2>
+                <ul>
+                    <li><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">Page du programme d'Intégration Multimédia</a></li>
+                    <li><a href="https://www.cmaisonneuve.qc.ca/accueil/calendrier-scolaire/">Calendrier des Sessions A22 et H23</a></li>
+                    <li><a href="https://cmaisonneuve.omnivox.ca/">Page Omnivox du Collège</a></li>     
+                    <li><a href="https://fr.wikipedia.org/wiki/Espagne#:~:text=L'Espagne%2C%20en%20forme%20longue,partie%20de%20la%20p%C3%A9ninsule%20Ib%C3%A9rique.">Page Wikipédia sur l'Espagne</a></li>                     
+                </ul>
+            </div>
+
+
+            <div id="descriptionTim">
+                <p>Le programme d'intégration multimédia, ou TIM, a pour but à long terme d'apprendre à l'étudiant comment programmer, créer des designs de sites web et même conceptualiser des jeux vidéo et à intégrer le tout grâce à des logiciels puissants tels que Visual Studio Code, Autodesk Maya ou Adobe After Effects, tous des pionniers et des standards de l'industrie.</p>
+            </div>
+                  
+        </footer>
+
+        <!-- Petite division de bas de page sous le footer pour les avis de confidentialité et les droits réservés -->
+        <div id="basPage">
+            <div><h3>Automne 2022 - TIM</h3></div>
+            <div><h3>Avis de confidentialité | Privacy Notice</h3></div>
+            <div><h3>Site fait par Camilia El Moustarih © - Tout droits réservés</h3></div>
+        </div>
+    </body>
+
+</html>
